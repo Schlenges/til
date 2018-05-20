@@ -1,6 +1,6 @@
 # Vim Cheat Sheet
 
-`h j k l`	cursor  (left, down, up, right)
+`h j k l`	cursor (left, down, up, right)  
 `:q`	quit  
 `:q!`	forced quit  
 `:wq`	save (write file to disc) and quit  
