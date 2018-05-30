@@ -118,3 +118,20 @@ public class Randomizing {
 ```Java
 int day = Calendar.getInstance().get(Calendar.DATE);
 ```
+
+## Overriding
+Methods that override inherited class metods are indicated by using the *@Override* annotation
+
+### toString
+The recommended way of printing an object is by defining a method that returns a "character string representation" of the object. In Java, a method returning a String representation is called toString. The principle is that the System.out.println method requests the string representation of an object and then prints it. The returned string representation of the toString method does not have to be written, as Java adds it automatically.
+```Java
+System.out.println(andy);
+// is the same as
+System.out.println(andy.toString());
+```
+
+## STATIC vs NON-STATIC
+The static or non-static nature of a variable or of a method depends on their scope. Static methods are always related to their class, whereas non-static methods can modify the variables of the object itself.  
+In contrast to instance methods, static methods are not connected to any particular object and thus the reference 'this' is not valid within static methods. A static method can operate only with data that is given it as parameter. The parameter of a static method can naturally be an object.  
+Since static methods are not connected to any object, those can not be called through the object name: objectName.methodName() but should be called by using only the method name.  
+If the static method is called from a different class, the call is of the form ClassName.staticMethodName().
