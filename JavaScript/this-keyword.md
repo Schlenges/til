@@ -47,7 +47,6 @@ const person = {
 const clyde = {name: "Clyde"};
 const clydeRobberies = person.robberies.bind(clyde, 1, 2);
 clydeRobberies(3, 4);  // Clyde committed 10 robberies
-}
 ```
 
 **Bind on the example of setTimeout()**  
