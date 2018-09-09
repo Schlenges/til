@@ -1,10 +1,10 @@
 # AJAX
 Asynchronous JavaScript and XML
 AJAX is an approach or concept to web development using existing tools and technologies
-that can update and change content dynamically without the page refreshing 
-with AJAx, wesbites can send and request data from a server in the background without disturbing the current page
-(HTML, JS, the DOM, CSS, XMLHttpRequest) 
-formed around 2005, first mention [http://adaptivepath.org/ideas/ajax-new-approach-web-applications/]
+that can update and change content dynamically without the page refreshing.
+With AJAX, wesbites can send and request data from a server in the background without disturbing the current page
+(HTML, JS, DOM, CSS, XMLHttpRequest) 
+Formed around 2005, first mentioned in: http://adaptivepath.org/ideas/ajax-new-approach-web-applications/
 
 
 #### XML vs JSON
