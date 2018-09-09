@@ -39,3 +39,8 @@ git commit -m "fixed untracked files"
 git checkout master  
 git reset --hard <other_branch>
 ```
+
+**add more to your last commit without changing commit msg**
+```
+git commit . --amend --no-edit
+```
