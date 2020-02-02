@@ -142,3 +142,13 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 Previously mapStateToProps was simply used for selecting pieces of state from the store, but in this case we are also using the notesToShow function to map the state into the desired filtered list of notes. The new version of notesToShow receives the store's state in its entirety, and selects an appropriate piece of the store that is passed to the component. Functions like this are called **selectors**.
 
 --> presentational, container and high order components
+
+## Asynchronous actions and redux thunk  
+The redux-thunk-library is a so-called redux-middleware, which must be initialized along with the initialization of the store.
+Thanks to redux-thunk, it is possible to define action creators so that they return a function having the dispatch-method of redux-store as its parameter. As a result of this, one can make asynchronous action creators, which first wait for some operation to finish, after which they then dispatch the real action.
+
+## Redux and component state  
+
+We have come a long way in this course and, finally, we have come to the point at which we are using React "the right way", meaning React only focuses on generating the views, and the application state is separated completely from the React components and passed on to Redux, its actions, and its reducers.
+
+What about the useState-hook, which provides components with their own state? Does it have any role if an application is using Redux or some other external state management solution? If the application has more complicated forms, it may be beneficial to implement their local state using the state provided by the useState function. One can, of course, have Redux manage the state of the forms, however, if the state of the form is only relevant when filling the form (e.g. for validation) it may be wise to leave the management of state to the component responsible for the form.
